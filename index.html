@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game By AK</title>
+    <script>
+    var numOfWon = 0;
+    var numOfLost = 0;
+for (var i = 0; i < 5; i++){   
+    let guessNumber = parseInt(prompt("Enter a number from 1-5: "));
+    let randomNumber = Math.floor(Math.random()*5)+1;   
+    if(guessNumber==randomNumber){
+      console.log("you have won"); 
+      numOfWon++; 
+    }else{
+        console.log("you have lost. random number was " + randomNumber);
+        numOfLost++;}}
+document.write('Total Number of won = ' + numOfWon + '<br>');
+document.write('Total Number of lost = ' + numOfLost + '<br>');
+    </script>
+</head>
+<body>
+<h3>Copyright &copy; by A K Biplob.</h3>
+</body>
+</html>
